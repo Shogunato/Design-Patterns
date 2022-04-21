@@ -3,7 +3,6 @@ package ShipBuilding.Ships;
 import ShipBuilding.Buildings.Factories.Parts.Engines.*;
 import ShipBuilding.Buildings.Factories.Parts.Scanners.*;
 
-
 public abstract class Ship {
     
     private String name;
@@ -24,4 +23,5 @@ public abstract class Ship {
     public String toString() {
         return "[Name="+name+", Engine="+engine+", Scanner="+scanner+"]";
     }
+    
 }

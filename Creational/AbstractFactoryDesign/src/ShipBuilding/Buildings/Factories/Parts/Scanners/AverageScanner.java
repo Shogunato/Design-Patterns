@@ -6,4 +6,5 @@ public class AverageScanner implements SScanner{
     public String toString(){
         return "average scanner";
     }
+    
 }

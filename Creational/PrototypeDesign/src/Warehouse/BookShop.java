@@ -12,15 +12,19 @@ public class BookShop implements Cloneable {
     public String getShopName() {
         return shopName;
     }
+
     public void setShopName(String shopName) {
         this.shopName = shopName;
     }
+
     public List<Book> getBooks() {
         return books;
     }
+
     public void setBooks(List<Book> books) {
         this.books = books;
     }
+
 
     public void loadData() {
         //Insert from Data Base
@@ -43,6 +47,5 @@ public class BookShop implements Cloneable {
         this.getBooks().forEach(b -> bs.getBooks().add(b));
         return bs;
     }
-
 
 }

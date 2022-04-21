@@ -12,7 +12,6 @@ public class NormalShip extends Ship{
 
     }
 
-
     @Override
     public void makeShip() {
 

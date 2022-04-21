@@ -6,4 +6,5 @@ public class AverageEngine implements SEngine {
     public String toString() {
         return "average engine";
     }
+    
 }
