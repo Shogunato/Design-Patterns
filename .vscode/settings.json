@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "Creational\\FactoryDesign\\src",
+        "Creational\\AbstractFactoryDesign\\src",
+        "Creational\\BuilderDesign\\src",
+        "Creational\\PrototypeDesign\\src",
+        "Creational\\SingletonDesign\\src",
+        "Structural\\AdapterDesign\\src",
+        "Structural\\CompositeDesign\\src",
+        "Behavioural\\ObserverDesign\\src"
+    ]
+}
