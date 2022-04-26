@@ -10,6 +10,7 @@
         "Structural\\CompositeDesign\\src",
         "Structural\\ProxyDesign\\src",
         "Structural\\FlyWeightDesign\\src",
+        "Structural\\FacadeDesign\\src",
         "Behavioural\\ObserverDesign\\src"
         
     ]
