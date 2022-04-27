@@ -25,6 +25,8 @@ public class CompositeMain {
         computer.addComponent(peripheral);
         computer.addComponent(cabinet);
 
+        computer.showPrice();
+
     }
 
 }
