@@ -11,6 +11,7 @@
         "Structural\\ProxyDesign\\src",
         "Structural\\FlyWeightDesign\\src",
         "Structural\\FacadeDesign\\src",
+        "Structural\\BridgeDesign\\src",
         "Behavioural\\ObserverDesign\\src"
         
     ]
