@@ -1,7 +1,7 @@
 import Tools.AssignmentWork;
 import Tools.PenAdapter;
 
-public class AdapterDesignMain {
+public class AdapterMain {
     
     public static void main(String[] args) {
         

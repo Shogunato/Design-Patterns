@@ -1,6 +1,6 @@
 import Devices.*;
 import Remotes.*;
-import Remotes.DVD.DVDRemote;
+import Remotes.DVD.*;
 import Remotes.TV.*;
 
 public class BridgeMain {
