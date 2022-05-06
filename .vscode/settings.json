@@ -16,7 +16,8 @@
         "Behavioural\\ObserverDesign\\src",
         "Behavioural\\TemplateMethodDesign\\src",
         "Behavioural\\MediatorDesign\\src",
-        "Behavioural\\ChainOfResponsibilityDesign\\src"
+        "Behavioural\\ChainOfResponsibilityDesign\\src",
+        "Behavioural\\StrategyDesign\\src"
         
     ]
 }
