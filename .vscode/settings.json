@@ -19,7 +19,8 @@
         "Behavioural\\ChainOfResponsibilityDesign\\src",
         "Behavioural\\StrategyDesign\\src",
         "Behavioural\\CommandDesign\\src",
-        "Behavioural\\StateDesign\\src"
+        "Behavioural\\StateDesign\\src",
+        "Behavioural\\VisitorDesign\\src"
         
     ]
 }

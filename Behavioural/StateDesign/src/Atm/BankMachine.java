@@ -59,7 +59,7 @@ public class BankMachine {
             if(cashInMachine == 0){
                 setATMState(noCash);
             }else{
-            setATMState(noCard);
+                setATMState(noCard);
             }
 
         }
