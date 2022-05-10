@@ -13,14 +13,15 @@
         "Structural\\FacadeDesign\\src",
         "Structural\\BridgeDesign\\src",
         "Structural\\DecoratorDesign\\src",
-        "Behavioural\\ObserverDesign\\src",
-        "Behavioural\\TemplateMethodDesign\\src",
-        "Behavioural\\MediatorDesign\\src",
-        "Behavioural\\ChainOfResponsibilityDesign\\src",
-        "Behavioural\\StrategyDesign\\src",
-        "Behavioural\\CommandDesign\\src",
-        "Behavioural\\StateDesign\\src",
-        "Behavioural\\VisitorDesign\\src"
+        "behavioural\\ObserverDesign\\src",
+        "behavioural\\TemplateMethodDesign\\src",
+        "behavioural\\MediatorDesign\\src",
+        "behavioural\\chainofresponsibilitydesign\\src",
+        "behavioural\\StrategyDesign\\src",
+        "behavioural\\CommandDesign\\src",
+        "behavioural\\StateDesign\\src",
+        "behavioural\\VisitorDesign\\src",
+        "behavioural\\iteratordesign\\src"
         
     ]
 }

@@ -1,9 +1,9 @@
-package Calculator.Functions;
+package calculator.functions;
 
-import Calculator.Chain;
-import Calculator.Numbers;
+import calculator.IChain;
+import calculator.Numbers;
 
-public class DivideNum implements Chain {
+public class DivideNum implements IChain {
 
     public int exec(Numbers n) {
 
@@ -16,7 +16,7 @@ public class DivideNum implements Chain {
     }
 
     @Override
-    public void setNextChain(Chain nextChain) {
+    public void setNextChain(IChain nextChain) {
         
     }
 

@@ -1,14 +1,14 @@
-import Calculator.*;
-import Calculator.Functions.*;
+import calculator.*;
+import calculator.functions.*;
 
 public class ChainOfResponsibilityMain {
 
     public static void main(String[] args) {
 
-        Chain chainCal1 = new SumNum();
-        Chain chainCal2 = new SubtractNum();
-        Chain chaincal3 = new MultiNum();
-        Chain chaincal4 = new DivideNum();
+        IChain chainCal1 = new SumNum();
+        IChain chainCal2 = new SubtractNum();
+        IChain chaincal3 = new MultiNum();
+        IChain chaincal4 = new DivideNum();
 
         Numbers request = new Numbers(47, 74, "sum");
 

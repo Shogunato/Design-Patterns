@@ -1,11 +1,11 @@
-package Calculator.Functions;
+package calculator.functions;
 
-import Calculator.Chain;
-import Calculator.Numbers;
+import calculator.IChain;
+import calculator.Numbers;
 
-public class SubtractNum implements Chain {
+public class SubtractNum implements IChain {
     
-    private Chain nextChain;
+    private IChain nextChain;
 
     public int exec(Numbers n) {
 
@@ -15,7 +15,7 @@ public class SubtractNum implements Chain {
     }
 
     @Override
-    public void setNextChain(Chain nextChain) {
+    public void setNextChain(IChain nextChain) {
         this.nextChain = nextChain;
         
     }
