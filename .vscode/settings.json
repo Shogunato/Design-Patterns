@@ -1,27 +1,26 @@
 {
     "java.project.sourcePaths": [
-
-        "Creational\\FactoryDesign\\src",
+        "Behavioural\\chainofresponsibilitydesign\\src",
+        "Behavioural\\CommandDesign\\src",
+        "Behavioural\\iteratordesign\\src",
+        "Behavioural\\MediatorDesign\\src",
+        "Behavioural\\ObserverDesign\\src",
+        "Behavioural\\StateDesign\\src",
+        "Behavioural\\StrategyDesign\\src",
+        "Behavioural\\TemplateMethodDesign\\src",
+        "Behavioural\\VisitorDesign\\src",
         "Creational\\AbstractFactoryDesign\\src",
         "Creational\\BuilderDesign\\src",
+        "Creational\\FactoryDesign\\src",
         "Creational\\PrototypeDesign\\src",
         "Creational\\SingletonDesign\\src",
         "Structural\\AdapterDesign\\src",
-        "Structural\\CompositeDesign\\src",
-        "Structural\\ProxyDesign\\src",
-        "Structural\\FlyWeightDesign\\src",
-        "Structural\\FacadeDesign\\src",
         "Structural\\BridgeDesign\\src",
+        "Structural\\CompositeDesign\\src",
         "Structural\\DecoratorDesign\\src",
-        "Behavioural\\ObserverDesign\\src",
-        "Behavioural\\TemplateMethodDesign\\src",
-        "Behavioural\\MediatorDesign\\src",
-        "Behavioural\\chainofresponsibilitydesign\\src",
-        "Behavioural\\StrategyDesign\\src",
-        "Behavioural\\CommandDesign\\src",
-        "Behavioural\\StateDesign\\src",
-        "Behavioural\\VisitorDesign\\src",
-        "Behavioural\\iteratordesign\\src"
-        
+        "Structural\\FacadeDesign\\src",
+        "Structural\\FlyWeightDesign\\src",
+        "Structural\\ProxyDesign\\src",
+        "Behavioural\\interpreterdesign\\scr"
     ]
 }
