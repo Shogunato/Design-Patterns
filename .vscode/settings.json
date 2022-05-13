@@ -21,6 +21,8 @@
         "Structural\\FacadeDesign\\src",
         "Structural\\FlyWeightDesign\\src",
         "Structural\\ProxyDesign\\src",
-        "Behavioural\\interpreterdesign\\scr"
+        "Behavioural\\interpreterdesign\\scr",
+        "Behavioural\\mementodesign\\src"
+        
     ]
 }
