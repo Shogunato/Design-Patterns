@@ -2,8 +2,10 @@ package Phone;
 
 import Phone.OSs.*;
 
+//Factory itself
 public class OperatingSystemFactory {
     
+    //Creation itself
     public OS getInstance(String type) {
 
         switch(type) {
