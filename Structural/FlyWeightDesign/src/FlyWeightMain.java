@@ -14,6 +14,8 @@ import java.awt.BorderLayout;
 
 public class FlyWeightMain extends JFrame {
 
+    //just creation of the UI
+    
     JButton startDrawing;
 
     int windowWidth = 800;
@@ -48,12 +50,16 @@ public class FlyWeightMain extends JFrame {
 
             @Override
             public void actionPerformed(ActionEvent e) {
+
+                //The actual creation/drawing of the rectangles
+
                 Graphics g = drawingPanel.getGraphics();
 
                 long startTime = System.currentTimeMillis();
 
                 for(int i=0; i<100000; i++) {
 
+                    //The use of the fly weight pattern here for the creation of future rectangles
                     MyRect rect = RectFactory.getRect(getRandColor());
                     rect.draw(g, getRandX(), getRandY(), getRandX(),getRandY());
 
@@ -71,6 +77,7 @@ public class FlyWeightMain extends JFrame {
 
     }
 
+    //Just gets a radom color for the creation of the rectangle
     private Color getRandColor() {
 
         Random randomGenerator = new Random();
@@ -80,6 +87,7 @@ public class FlyWeightMain extends JFrame {
 
     }
 
+    //Gets random coordinates for the rectangle to be created
     private int getRandX() { return (int)(Math.random()*windowWidth); }
     private int getRandY() { return (int)(Math.random()*windowHeight); }
 

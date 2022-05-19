@@ -1,5 +1,6 @@
 package Atm;
 
+//Complementary class for a more "realistic code"
 public class Card {
     
     private int pin;

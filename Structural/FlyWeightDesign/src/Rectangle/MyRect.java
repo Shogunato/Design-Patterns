@@ -3,6 +3,7 @@ package Rectangle;
 import java.awt.Color;
 import java.awt.Graphics;
 
+//Complementary class for a more "realistic" code
 public class MyRect {
     
     private Color color;

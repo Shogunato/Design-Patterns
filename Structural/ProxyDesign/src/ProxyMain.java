@@ -1,13 +1,13 @@
 import Atm.AtmMachine;
 import Atm.AtmProxy;
-import Atm.GetAtmData;
+import Atm.IGetAtmData;
 
 public class ProxyMain {
     
     public static void main(String[] args) {
 
-        GetAtmData realAtmMachine = new AtmMachine();
-        GetAtmData proxyAtmMachine = new AtmProxy(realAtmMachine);
+        IGetAtmData realAtmMachine = new AtmMachine();
+        IGetAtmData proxyAtmMachine = new AtmProxy(realAtmMachine);
     
         System.out.println("Data="+proxyAtmMachine.getData()+"\nMoney="+proxyAtmMachine.getMoneyinAtm());
         

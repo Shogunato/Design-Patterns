@@ -1,5 +1,8 @@
 package Bank;
 
+//Actual implementation of the Facade design pattern were the actual methods reside outside of the mais class
+//on complementary classes
+
 public class BankAccountFacade {
     
     private int accountNumber;
@@ -22,11 +25,9 @@ public class BankAccountFacade {
 
     }
 
-    public int getAccountNumber() { return accountNumber;}
-    public int getKey() { return key; }
-
     public void withdraw(double request) {
 
+        //Bunch of the checkers for "security"
         if(acctCheck.accountActive(getAccountNumber()) 
            && securityChek.sercurityCodeActive(getKey()) 
            && fundCheck.withdrawMoney(request)) {
@@ -40,6 +41,7 @@ public class BankAccountFacade {
 
     public void deposit(double deposit) {
 
+        //Checkers for "security"
         if(acctCheck.accountActive(getAccountNumber()) && securityChek.sercurityCodeActive(getKey())) {
 
             fundCheck.despositCash(deposit);
@@ -50,5 +52,8 @@ public class BankAccountFacade {
         }
 
     }
+
+    public int getAccountNumber() { return accountNumber;}
+    public int getKey() { return key; }
 
 }

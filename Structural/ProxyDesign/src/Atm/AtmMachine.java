@@ -2,7 +2,9 @@ package Atm;
 
 import java.util.Scanner;
 
-public class AtmMachine implements GetAtmData {
+
+//The literal ATM machine
+public class AtmMachine implements IGetAtmData {
     
     Card card;
     private int money;
@@ -18,12 +20,18 @@ public class AtmMachine implements GetAtmData {
         if(this.card == null){
             System.out.println("Please insert pin: ");
             Scanner scanner = new Scanner(System.in);
+
             if(card.insertPin(scanner.nextInt())==true) {
+                
                 this.card = card;
+
             }else{
+
                 System.out.println("Incorrect pin refusing card...");
+
             }
             scanner.close();
+
         }else{
             System.out.println("Card already inserted...");
         }

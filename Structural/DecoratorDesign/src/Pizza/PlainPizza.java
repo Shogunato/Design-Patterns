@@ -1,5 +1,6 @@
 package Pizza;
 
+//Complementary class for a more "realistic" code
 public class PlainPizza implements Pizza {
 
     @Override

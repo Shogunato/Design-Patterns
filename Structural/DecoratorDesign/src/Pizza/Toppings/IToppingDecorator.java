@@ -2,11 +2,12 @@ package Pizza.Toppings;
 
 import Pizza.Pizza;
 
-public abstract class ToppingDecorator implements Pizza{
+//The class that implements the Decorator design wich will connect every Topping to be of the same interface
+public abstract class IToppingDecorator implements Pizza{
 
     protected Pizza tempPizza;
 
-    public ToppingDecorator(Pizza newPizza) {
+    public IToppingDecorator(Pizza newPizza) {
         this.tempPizza = newPizza;
     }
 

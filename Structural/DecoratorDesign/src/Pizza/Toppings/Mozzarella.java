@@ -2,7 +2,8 @@ package Pizza.Toppings;
 
 import Pizza.Pizza;
 
-public class Mozzarella extends ToppingDecorator {
+//Complementary class for a more "realistic" code
+public class Mozzarella extends IToppingDecorator {
 
     public Mozzarella(Pizza newPizza) {
         super(newPizza);

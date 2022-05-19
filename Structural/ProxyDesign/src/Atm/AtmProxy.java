@@ -1,10 +1,12 @@
 package Atm;
 
-public class AtmProxy implements GetAtmData{
+//The proxy itself
+public class AtmProxy implements IGetAtmData{
 
-    private GetAtmData machine;
+    //The ATM Machine in fact
+    private IGetAtmData machine;
 
-    public AtmProxy(GetAtmData realAtmMachine) {
+    public AtmProxy(IGetAtmData realAtmMachine) {
         this.machine = realAtmMachine;
     }
 

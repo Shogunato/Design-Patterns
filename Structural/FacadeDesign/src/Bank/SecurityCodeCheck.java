@@ -1,5 +1,6 @@
 package Bank;
 
+//Complementary class for a more "realistic" code
 public class SecurityCodeCheck {
     
     private int securityCode = 1234;

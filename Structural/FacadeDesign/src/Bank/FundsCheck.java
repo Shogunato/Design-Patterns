@@ -1,5 +1,6 @@
 package Bank;
 
+//Complementary class for a more "realistic" code
 public class FundsCheck {
     
     private double cashInAccount = 3000.00;

@@ -1,5 +1,6 @@
 package Bank;
 
+//Complementary class for a more "realistic" code
 public class AccountCheck {
     
     private int accountNumber = 1234567;
