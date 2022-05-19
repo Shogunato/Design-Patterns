@@ -3,16 +3,18 @@ package ShipBuilding.Buildings;
 import ShipBuilding.Buildings.Factories.*;
 import ShipBuilding.Ships.*;
 
-public class ShipMaker extends ShipBuilder{
+//The Actual ship maker/builder
+public class ShipMaker extends AbstractShipBuilder{
 
     @Override
-    public Ship buildShip(String shipType) {
+    public AbstractShip buildShip(String shipType) {
         
-        Ship returnShip = null;
+        AbstractShip returnShip = null;
 
         switch(shipType) {
             case("Big"): {
                 
+                //Creates factory to return the parts to be used for maximum custmization
                 BigShipFactory bigShipPartsFactory = new BigShipFactory();
                 returnShip = new BigShip(bigShipPartsFactory);
                 returnShip.setName("Big Ship");
@@ -22,6 +24,7 @@ public class ShipMaker extends ShipBuilder{
 
             case("Small"): {
 
+                //Creates factory to return the parts to be used for maximum custmization
                 SmallShipFactory smallShipPartsFactory = new SmallShipFactory();
                 returnShip = new SmallShip(smallShipPartsFactory);
                 returnShip.setName("Small Ship");
@@ -31,6 +34,7 @@ public class ShipMaker extends ShipBuilder{
 
             default: {
 
+                //Creates factory to return the parts to be used for maximum custmization
                 NormalShipFactory normalShipPartsFactory = new NormalShipFactory();
                 returnShip = new NormalShip(normalShipPartsFactory);
                 returnShip.setName("Normal Ship");

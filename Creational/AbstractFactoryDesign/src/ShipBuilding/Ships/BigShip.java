@@ -1,12 +1,13 @@
 package ShipBuilding.Ships;
 
-import ShipBuilding.Buildings.Factories.ShipFactory;
+import ShipBuilding.Buildings.Factories.IShipFactory;
 
-public class BigShip extends Ship{
+//Ship template for creation
+public class BigShip extends AbstractShip{
 
-    ShipFactory shipFactory;
+    IShipFactory shipFactory;
 
-    public BigShip(ShipFactory shipFactory) {
+    public BigShip(IShipFactory shipFactory) {
 
         this.shipFactory = shipFactory;
 
