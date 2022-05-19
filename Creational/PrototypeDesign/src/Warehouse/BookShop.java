@@ -3,6 +3,7 @@ package Warehouse;
 import java.util.ArrayList;
 import java.util.List;
 
+//The main class that implements the prototype design pattern
 public class BookShop implements Cloneable {
     
     private String shopName;
@@ -27,7 +28,9 @@ public class BookShop implements Cloneable {
 
 
     public void loadData() {
+
         //Insert from Data Base
+
         for(int i=0; i<10; i++) {
             Book b = new Book();
             b.setBid(i);
@@ -41,6 +44,7 @@ public class BookShop implements Cloneable {
         return "BookShop [books=" + books + ", shopName=" + shopName + "]";
     }
 
+    //The main implementation of the prototype design with clone
     @Override
     public BookShop clone() throws CloneNotSupportedException {
         BookShop bs = new BookShop();

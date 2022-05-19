@@ -1,5 +1,6 @@
 package Warehouse;
 
+//Complementary class for more "realistic" code
 public class Book {
     
     private int bid;
