@@ -1,5 +1,6 @@
 package ShipBuilding.Buildings.Factories.Parts.Scanners;
 
-public interface SScanner {
+//Interface that connects all of the Engines
+public interface ISScanner {
     public String toString();
 }

@@ -3,11 +3,12 @@ package ShipBuilding.Ships;
 import ShipBuilding.Buildings.Factories.Parts.Engines.*;
 import ShipBuilding.Buildings.Factories.Parts.Scanners.*;
 
-public abstract class Ship {
+//Base of a ship
+public abstract class AbstractShip {
     
     private String name;
-    SEngine engine;
-    SScanner scanner;
+    ISEngine engine;
+    ISScanner scanner;
 
     public String getName() {
         return this.name;
@@ -17,6 +18,7 @@ public abstract class Ship {
         this.name = newName;
     }
 
+    //Customization
     public abstract void makeShip();
 
     @Override

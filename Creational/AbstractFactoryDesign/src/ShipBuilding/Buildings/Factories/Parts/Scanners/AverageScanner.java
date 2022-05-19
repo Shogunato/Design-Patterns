@@ -1,6 +1,7 @@
 package ShipBuilding.Buildings.Factories.Parts.Scanners;
 
-public class AverageScanner implements SScanner{
+//Part that can be select depending of the specifications of the ship
+public class AverageScanner implements ISScanner{
     
     @Override
     public String toString(){

@@ -1,5 +1,6 @@
 package ShipBuilding.Buildings.Factories.Parts.Engines;
 
-public interface SEngine {
+//Interface that connects all of the Engines
+public interface ISEngine {
     public String toString();
 }

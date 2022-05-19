@@ -1,19 +1,20 @@
 package ShipBuilding.Buildings.Factories;
 
-import ShipBuilding.Buildings.Factories.Parts.Engines.SEngine;
+import ShipBuilding.Buildings.Factories.Parts.Engines.ISEngine;
 import ShipBuilding.Buildings.Factories.Parts.Engines.WeakEngine;
-import ShipBuilding.Buildings.Factories.Parts.Scanners.SScanner;
+import ShipBuilding.Buildings.Factories.Parts.Scanners.ISScanner;
 import ShipBuilding.Buildings.Factories.Parts.Scanners.ShortRangeScanner;
 
-public class SmallShipFactory implements ShipFactory {
+//The creation of the ship itself
+public class SmallShipFactory implements IShipFactory {
 
     @Override
-    public SScanner addSScanner() {
+    public ISScanner addSScanner() {
         return new ShortRangeScanner();
     }
 
     @Override
-    public SEngine addSEngine() {
+    public ISEngine addSEngine() {
         return new WeakEngine();
     }
     
