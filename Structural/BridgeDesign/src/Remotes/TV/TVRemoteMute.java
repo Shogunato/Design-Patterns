@@ -1,9 +1,10 @@
 package Remotes.TV;
 
 import Devices.EntretainmentDevice;
-import Remotes.RemoteButton;
+import Remotes.AbstractRemoteButton;
 
-public class TVRemoteMute extends RemoteButton {
+//"Addon" for the asbstract class
+public class TVRemoteMute extends AbstractRemoteButton {
 
     public TVRemoteMute(EntretainmentDevice newDevice) {
 
@@ -11,6 +12,7 @@ public class TVRemoteMute extends RemoteButton {
 
     }
 
+    //The "addon" contribution
     @Override
     public void buttonNine() {
         System.out.println("TV muted");

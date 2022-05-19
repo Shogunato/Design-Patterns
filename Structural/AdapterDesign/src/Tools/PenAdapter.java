@@ -2,7 +2,8 @@ package Tools;
 
 import Borrow.InkPen;
 
-public class PenAdapter implements Pen {
+//Adapt outside classes
+public class PenAdapter implements IPen {
 
     InkPen ip = new InkPen();
 

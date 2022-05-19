@@ -1,5 +1,6 @@
 package Devices;
 
+//"Addon" for the abstract class
 public class TVDevice extends EntretainmentDevice {
 
     public TVDevice(int newDeviceState, int newMaxSetting) {
@@ -9,6 +10,7 @@ public class TVDevice extends EntretainmentDevice {
 
     }
 
+    //The "addon" contribution
     @Override
     public void buttonFive() {
         deviceStat --;
@@ -16,6 +18,7 @@ public class TVDevice extends EntretainmentDevice {
         
     }
 
+    //The "addon" contribution
     @Override
     public void buttonSix() {
         deviceStat ++;

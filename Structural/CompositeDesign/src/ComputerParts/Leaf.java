@@ -1,6 +1,7 @@
 package ComputerParts;
 
-public class Leaf implements Component {
+//Lower class in the tree the leafs
+public class Leaf implements IComponent {
 
     private int price;
     private String name;

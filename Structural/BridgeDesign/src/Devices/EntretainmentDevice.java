@@ -1,11 +1,13 @@
 package Devices;
 
+//Abstract class that is the base for the Object
 public abstract class EntretainmentDevice {
     
     public int deviceStat;
     public int maxSetting;
     public int volumeLevel = 0;
 
+    //Methods that require implemetation
     public abstract void buttonFive();
     public abstract void buttonSix();
 

@@ -3,16 +3,17 @@ package ComputerParts;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Composite implements Component{
+//Upper class in the tree the composite
+public class Composite implements IComponent{
 
     private String name;
-    List<Component> leafs = new ArrayList<>();
+    List<IComponent> leafs = new ArrayList<>();
 
     public Composite(String name) {
         this.name = name;
     }
 
-    public void addComponent(Component newComponent) {
+    public void addComponent(IComponent newComponent) {
         leafs.add(newComponent);
     }
 

@@ -2,11 +2,12 @@ package Remotes;
 
 import Devices.EntretainmentDevice;
 
-public abstract class RemoteButton {
+//Abstract class that is the base for any other class
+public abstract class AbstractRemoteButton {
 
     private EntretainmentDevice device;
 
-    public RemoteButton(EntretainmentDevice newDevice) {
+    public AbstractRemoteButton(EntretainmentDevice newDevice) {
         this.device = newDevice;
     }
 
@@ -22,6 +23,7 @@ public abstract class RemoteButton {
         device.deviceFeedback();
     }
 
+    //The method for the "addon" to complement
     public abstract void buttonNine();
 
 }

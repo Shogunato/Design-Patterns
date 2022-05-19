@@ -1,9 +1,10 @@
 package Remotes.DVD;
 
 import Devices.EntretainmentDevice;
-import Remotes.RemoteButton;
+import Remotes.AbstractRemoteButton;
 
-public class DVDRemote extends RemoteButton {
+//"Addon" for the abstract class
+public class DVDRemote extends AbstractRemoteButton {
 
     private boolean play = true;
 
@@ -11,6 +12,7 @@ public class DVDRemote extends RemoteButton {
         super(newDevice);
     }
 
+    //The "addon" contribution
     @Override
     public void buttonNine() {
         play = !play;
