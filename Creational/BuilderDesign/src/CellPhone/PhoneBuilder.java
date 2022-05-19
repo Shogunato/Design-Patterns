@@ -1,5 +1,6 @@
 package CellPhone;
 
+//The builder that is required for the builder design pattern
 public class PhoneBuilder {
     
     private String os;
@@ -8,6 +9,8 @@ public class PhoneBuilder {
     private double screenSize;
     private int battery;
 
+    //Customize the phone
+    
     public PhoneBuilder setOs (String os){
         this.os = os;
         return this;
@@ -33,6 +36,7 @@ public class PhoneBuilder {
         return this;
     }
 
+    //Creates the phone
     public Phone getPhone() {
         return new Phone(os, ram, processor, screenSize, battery);
     }

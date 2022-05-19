@@ -1,5 +1,6 @@
 package CellPhone;
 
+//Object to be build
 public class Phone {
     
     private String os;
