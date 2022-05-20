@@ -3,11 +3,12 @@ package StockMarket.Mediator;
 import java.util.ArrayList;
 
 import StockMarket.StockOffer;
-import StockMarket.Colleague.Colleague;
+import StockMarket.Colleague.AbstractColleague;
 
-public class StockMediator implements Mediator {
+//An example of an mediator
+public class StockMediator implements IMediator {
 
-    private ArrayList<Colleague> colleagues;
+    private ArrayList<AbstractColleague> colleagues;
     private ArrayList<StockOffer> stockBuyOffers;
     private ArrayList<StockOffer> stockSellOffers;
 
@@ -61,7 +62,7 @@ public class StockMediator implements Mediator {
     }
 
     @Override
-    public void addColleague(Colleague colleague) {
+    public void addColleague(AbstractColleague colleague) {
         
         colleagues.add(colleague);
         colleagueCodes ++;

@@ -1,5 +1,6 @@
 package StockMarket;
 
+//Object to be used in transactions/ to be mediated
 public class StockOffer {
     
     private int colleagueCode = 0;
