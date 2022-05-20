@@ -5,6 +5,7 @@ import java.util.Iterator;
 import songs.ISongIterator;
 import songs.SongInfo;
 
+//Receptor of the data for a more "realistic" code
 public class DiskJockey {
     
     ISongIterator iterator;
@@ -31,6 +32,7 @@ public class DiskJockey {
 
     }
 
+    //Easy execution even if the classes hold the data in different ways because of the iterator design
     public void printSongs(ISongIterator iterator) {
 
         Iterator<SongInfo> songIterator = iterator.createIterator();

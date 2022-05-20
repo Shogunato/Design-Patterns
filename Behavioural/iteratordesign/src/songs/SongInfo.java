@@ -1,5 +1,6 @@
 package songs;
 
+//Object to be stored in multiple classes
 public class SongInfo {
     
     private String artistName;

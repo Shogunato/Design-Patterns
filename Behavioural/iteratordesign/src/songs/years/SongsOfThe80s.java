@@ -6,6 +6,7 @@ import java.util.Iterator;
 import songs.ISongIterator;
 import songs.SongInfo;
 
+//An class that holds objects in a unique way
 public class SongsOfThe80s implements ISongIterator {
     
     SongInfo[] bestSongs;
@@ -28,6 +29,7 @@ public class SongsOfThe80s implements ISongIterator {
 
     }
 
+    //The iterator design pattern in action by creation a particular iterator for the class itself
     @Override
     public Iterator<SongInfo> createIterator() {
         return Arrays.asList(bestSongs).iterator();
