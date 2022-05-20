@@ -1,5 +1,6 @@
 package conversion;
 
+//Standardizes user input
 public class ConversionContext {
     
     private String conversionQues;
@@ -15,6 +16,7 @@ public class ConversionContext {
 
         this.conversionQues = input;
 
+        //Parts of the question being parsed
         partsOfQues = getInput().split(" ");
         fromConversion = getCapitalized(partsOfQues[1]);
         toConversion = partsOfQues[3].toLowerCase();
@@ -24,6 +26,7 @@ public class ConversionContext {
 
     }
 
+    //Standardization
     private String getCapitalized(String string) {
 
         if(string.charAt(string.length()-1) != 's'){
@@ -35,7 +38,9 @@ public class ConversionContext {
 
     }
 
-    public String getInput() {return conversionQues;}
+    public String getInput() {
+        return conversionQues;
+    }
 
     public String getConversionResponse() {
         return conversionResponse;

@@ -1,5 +1,6 @@
 package conversion.expressions;
 
+//Possible awnser/conversions to the question
 public abstract class AbstractExpression {
     
     public abstract String liters(double question);   
