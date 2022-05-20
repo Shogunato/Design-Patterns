@@ -1,10 +1,11 @@
 package calculator;
 
+//The Object to be used in the functions
 public class Numbers {
     
     private int n1;
     private int n2;
-    private String function;
+    private String function;// or request to be more precise
 
     public Numbers(int n1, int n2, String function) {
 

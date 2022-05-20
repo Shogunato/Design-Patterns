@@ -12,6 +12,7 @@ public class ChainOfResponsibilityMain {
 
         Numbers request = new Numbers(47, 74, "sum");
 
+        //The chaining itself
         chainCal1.setNextChain(chainCal2);
         chainCal2.setNextChain(chaincal3);
         chaincal3.setNextChain(chaincal4);
