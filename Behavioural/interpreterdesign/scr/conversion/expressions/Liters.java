@@ -1,5 +1,7 @@
 package conversion.expressions;
 
+//Conversion from liters to...
+//Object that the user can ask for
 public class Liters extends AbstractExpression {
 
     @Override
