@@ -2,7 +2,7 @@ package Devices;
 
 public class TvRemote {
     
-    public static ElectronicDevices getDevice() {
+    public static IElectronicDevices getDevice() {
         return new Television();
     }
 }

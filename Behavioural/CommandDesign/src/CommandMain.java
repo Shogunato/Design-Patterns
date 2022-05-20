@@ -5,7 +5,7 @@ public class CommandMain {
     
     public static void main(String[] args) {
 
-        ElectronicDevices device = TvRemote.getDevice();
+        IElectronicDevices device = TvRemote.getDevice();
         TurnTvOn on = new TurnTvOn(device);
         DeviceButton buttonOn = new DeviceButton(on);
 
