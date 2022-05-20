@@ -1,6 +1,7 @@
 package Devices;
 
-public interface ElectronicDevices {
+//Interface that connects all devices
+public interface IElectronicDevices {
     
     public void turnOn();
     public void turnOff();

@@ -1,13 +1,14 @@
 package Devices.Commands.TVCommands;
 
-import Devices.ElectronicDevices;
-import Devices.Commands.Command;
+import Devices.IElectronicDevices;
+import Devices.Commands.ICommand;
 
-public class TurnTvUp implements Command {
+//Particular class that can be executed by the command design executable
+public class TurnTvUp implements ICommand {
 
-    ElectronicDevices device;
+    IElectronicDevices device;
 
-    public TurnTvUp(ElectronicDevices newDevice) {
+    public TurnTvUp(IElectronicDevices newDevice) {
         this.device = newDevice;
     }
 

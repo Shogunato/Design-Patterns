@@ -1,6 +1,7 @@
 package Devices;
 
-public class Television implements ElectronicDevices {
+//Device to be "commanded"
+public class Television implements IElectronicDevices {
 
     private boolean power = false;
     private int volume = 0;

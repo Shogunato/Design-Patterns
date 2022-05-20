@@ -1,19 +1,23 @@
 package Devices;
 
-import Devices.Commands.Command;
+import Devices.Commands.ICommand;
 
+//The executioner of the command design pattern
 public class DeviceButton {
     
-    Command theCommand;
+    //custom command
+    ICommand theCommand;
 
-    public DeviceButton(Command newCommand) {
+    public DeviceButton(ICommand newCommand) {
         this.theCommand = newCommand;
     }
 
+    //execution
     public void press() {
         theCommand.execute();
     }
 
+    //execution
     public void pressUndo() {
         theCommand.undo();
     }
