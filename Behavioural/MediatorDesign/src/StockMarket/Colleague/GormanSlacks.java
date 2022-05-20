@@ -1,10 +1,11 @@
 package StockMarket.Colleague;
 
-import StockMarket.Mediator.Mediator;
+import StockMarket.Mediator.IMediator;
 
-public class GormanSlacks extends Colleague {
+public class GormanSlacks extends AbstractColleague {
     
-    public GormanSlacks(Mediator mediator) {
+    //Connection of the colleague with the mediator
+    public GormanSlacks(IMediator mediator) {
         super(mediator);
 
         System.out.println("Gorman Slacks signed up for the exchange.");
