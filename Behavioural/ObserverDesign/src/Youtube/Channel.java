@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 //To be observed
-public class Channel implements Subject {
+public class Channel implements ISubject {
 
     private String title;
     private List<Subscriber> subs = new ArrayList<>();

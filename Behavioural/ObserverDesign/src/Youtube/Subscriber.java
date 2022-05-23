@@ -2,7 +2,7 @@ package Youtube;
 
 
 //The observer
-public class Subscriber implements Observer {
+public class Subscriber implements IObserver {
     
     private String name;
     private Channel channel = new Channel();
