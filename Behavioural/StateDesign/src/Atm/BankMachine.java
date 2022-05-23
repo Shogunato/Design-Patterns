@@ -29,6 +29,7 @@ public class BankMachine {
 
     }
 
+    //It executes atmState as it changes from state to state
     public void insertCard() {
         atmState.insertCard();
         
