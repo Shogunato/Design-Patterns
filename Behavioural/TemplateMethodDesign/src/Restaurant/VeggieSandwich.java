@@ -1,10 +1,11 @@
 package Restaurant;
 
-public class VeggieSandwich extends Sandwich {
+public class VeggieSandwich extends AbstractSandwich {
 
     String[] vegetablesUsed = {"Peppers", "Tomato", "Lettuce", "Onions"};
     String[] condimentsUsed = {"Oil", "Vinegar"};
 
+    //It overrides what it wans to customize from the sandwich
     @Override
     boolean customerWantsCheese() {return false;}
 

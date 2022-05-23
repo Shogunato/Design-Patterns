@@ -1,12 +1,13 @@
 package Restaurant;
 
-public class ItalianSandwich extends Sandwich {
+public class ItalianSandwich extends AbstractSandwich {
 
     String[] meatUsed = {"Salami", "Ham", "Pepperoni"};
     String[] cheeseUsed = {"Provolone"};
     String[] vegetablesUsed = {"Peppers", "Tomato", "Lettuce", "Onions"};
     String[] condimentsUsed = {"Oil", "Vinegar"};
 
+    //It overrides what it wans to customize from the sandwich
     @Override
     void addCondiments() {
         System.out.print("Adding condiments: ");

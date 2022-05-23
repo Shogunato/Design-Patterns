@@ -1,6 +1,6 @@
 package Restaurant;
 
-public abstract class Sandwich {
+public abstract class AbstractSandwich {
 
     public final void makeSandwich() {
 
@@ -18,6 +18,7 @@ public abstract class Sandwich {
         System.out.println("Cutting sandwich...");
     }
 
+    //Default methods of an sandwich
     abstract void addCondiments();
     boolean customerWantsCondiments() {return true;}
 
