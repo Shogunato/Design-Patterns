@@ -8,8 +8,10 @@ import Visitable.*;
 
 public class TaxVisitor implements Visitor {
 
+    //Just for better output
     DecimalFormat df = new DecimalFormat("##.##", new DecimalFormatSymbols(Locale.UK));
 
+    //The "visiting" itself
     @Override
     public double visit(Necessity product) {
         return Double.parseDouble(df.format(product.getValue() + product.getValue()*0.9));
