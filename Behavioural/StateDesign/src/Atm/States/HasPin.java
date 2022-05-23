@@ -2,7 +2,7 @@ package Atm.States;
 
 import Atm.BankMachine;
 
-public class HasPin implements AtmState {
+public class HasPin implements IAtmState {
 
     BankMachine machine;
 

@@ -2,7 +2,7 @@ package Atm.States;
 
 import Atm.BankMachine;
 
-public class NoCash implements AtmState {
+public class NoCash implements IAtmState {
 
     BankMachine machine;
 

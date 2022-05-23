@@ -4,11 +4,11 @@ import Atm.States.*;
 
 public class BankMachine {
     
-    private AtmState atmState;
-    private AtmState hasCard;
-    private AtmState noCard;
-    private AtmState hasPin;
-    private AtmState noCash;
+    private IAtmState atmState;
+    private IAtmState hasCard;
+    private IAtmState noCard;
+    private IAtmState hasPin;
+    private IAtmState noCash;
 
     private double cashInMachine = 4000.00;
 
@@ -67,7 +67,7 @@ public class BankMachine {
         
     }
 
-    public void setATMState(AtmState newState) {
+    public void setATMState(IAtmState newState) {
         this.atmState = newState;
     }
 
@@ -79,10 +79,10 @@ public class BankMachine {
         this.pintState = newState;
     }
 
-    public AtmState getHasCardState() {return this.hasCard;}
-    public AtmState getNoCardState() {return this.noCard;}
-    public AtmState getHasPinState() {return this.hasPin;}
-    public AtmState getNoCashState() {return this.noCash;}
+    public IAtmState getHasCardState() {return this.hasCard;}
+    public IAtmState getNoCardState() {return this.noCard;}
+    public IAtmState getHasPinState() {return this.hasPin;}
+    public IAtmState getNoCashState() {return this.noCash;}
 
     public boolean getPinState() {return this.pintState;}
 
