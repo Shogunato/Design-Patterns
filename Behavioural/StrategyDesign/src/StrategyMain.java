@@ -6,8 +6,8 @@ public class StrategyMain {
     
     public static void main(String[] args) {
 
-        Animals dog = new Dog();
-        Animals bird = new Bird();
+        AbstractAnimals dog = new Dog();
+        AbstractAnimals bird = new Bird();
 
         System.out.println(dog.tryToFly());
         System.out.println(bird.tryToFly());
@@ -15,6 +15,7 @@ public class StrategyMain {
         dog.setFlyingType(new ItFlys());
         bird.setFlyingType(new CantFly());
 
+        //a dog that flies and a bird that cant fly, customization i suppose...
         System.out.println(dog.tryToFly());
         System.out.println(bird.tryToFly());
 

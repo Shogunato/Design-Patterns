@@ -2,10 +2,11 @@ package Animals;
 
 import Animals.AnimalsCaracteristcs.ItFlys;
 
-public class Bird extends Animals {
+public class Bird extends AbstractAnimals {
 
     public Bird() {
         super();
+        //Uses a class to define unique characteristics
         this.flyingType = new ItFlys();
     }
 

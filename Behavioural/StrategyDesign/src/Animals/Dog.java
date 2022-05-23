@@ -2,11 +2,12 @@ package Animals;
 
 import Animals.AnimalsCaracteristcs.*;
 
-public class Dog extends Animals {
+public class Dog extends AbstractAnimals {
 
     public Dog() {
         
         super();
+        //Uses a class to define unique characteristics
         flyingType = new CantFly();
 
     }
