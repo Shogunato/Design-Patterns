@@ -3,6 +3,7 @@ package Youtube;
 import java.util.List;
 import java.util.ArrayList;
 
+//To be observed
 public class Channel implements Subject {
 
     private String title;

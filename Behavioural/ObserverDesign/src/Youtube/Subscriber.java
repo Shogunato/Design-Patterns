@@ -1,5 +1,7 @@
 package Youtube;
 
+
+//The observer
 public class Subscriber implements Observer {
     
     private String name;
