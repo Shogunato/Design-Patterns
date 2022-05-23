@@ -2,6 +2,7 @@ package classes;
 
 import java.util.ArrayList;
 
+//A class that stores the memento as a sort of "database"
 public class Caretaker {
     
     ArrayList<Memento> savedArticles = new ArrayList<>();

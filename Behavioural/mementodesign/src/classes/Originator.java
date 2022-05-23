@@ -1,5 +1,6 @@
 package classes;
 
+//The manipulator of the mementor
 public class Originator {
     
     private String article;

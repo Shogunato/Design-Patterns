@@ -12,6 +12,7 @@ public class MementoMain extends JFrame{
        
    }
    
+   //UI
    private JButton saveBut, undoBut, redoBut;
    
    private JTextArea theArticle = new JTextArea(40,60);
@@ -20,7 +21,7 @@ public class MementoMain extends JFrame{
    
    Originator originator = new Originator();
    
-   int saveFiles = 0, currentArticle = 0;
+   int savedFiles = 0, currentArticle = 0;
    
    public MementoMain(){
 	   
@@ -60,25 +61,24 @@ public class MementoMain extends JFrame{
 
 		public void actionPerformed(ActionEvent e) {
 			
-			if(e.getSource() == saveBut){
-				
+			//Save Button code
+			if(e.getSource() == saveBut){	
 				
 				String textInTextArea = theArticle.getText();
 							
-				originator.setArticle(textInTextArea);;
+				originator.setArticle(textInTextArea);
 				
 				caretaker.addMemento( originator.storeMemento() );
 				
-				saveFiles++;
+				savedFiles++;
 				currentArticle++;
 				
-				System.out.println("Save Files " + saveFiles);
+				System.out.println("Save Files " + savedFiles);
 				
 				undoBut.setEnabled(true);
 				
-			} else 
-				
-				if(e.getSource() == undoBut){
+			//Undo Button code
+			} else if(e.getSource() == undoBut){
 					
 					if(currentArticle >= 1){
 						
@@ -96,11 +96,10 @@ public class MementoMain extends JFrame{
 						
 					}
 					
-				} else
+				//Redo Button code
+				} else if(e.getSource() == redoBut){
 					
-					if(e.getSource() == redoBut){
-					
-					if((saveFiles - 1) > currentArticle){
+					if((savedFiles - 1) > currentArticle){
 						
 						currentArticle++;
 					

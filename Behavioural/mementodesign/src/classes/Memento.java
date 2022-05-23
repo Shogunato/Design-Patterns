@@ -1,5 +1,6 @@
 package classes;
 
+//An simple class that holds and returns data
 public class Memento {
     
     private String article;
